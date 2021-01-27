@@ -1,0 +1,11 @@
+Country,Flights,Quarantine,Addition
+Austria,Yes,0,(subject to past 10 days' travel history)
+Brazil,Yes,0,"(only by air, except at airports in the states of Mato Grosso do Sul, Paraiba, Rondonia, Rio Grande do Sul and Tocantins)"
+China,Yes,14 days,Direct flights are being resumed from 8 countries. China has opened its borders to 36 European countries and 13 Asian countries. Passengers from these countries can arrive in China subject to testing negative for COVID-19. 
+France,Yes,0,Residents from certain nations (all EU nations included) are allowed to travel to France withiout having to quarantine or undergo any tests. 
+India,No,14 days,International travel of foreign passengers has been prohibited right now. Indian nationals who are arriving at India via repatrtriation flights through the Vandhe Bharat mission need to satisfy a minimum quarantine period of 14 days. Indian nationals can opt for home quarantine. 
+Norway,Yes,10 days,"Anyone ariving in Norway from abroad shall be in quarantine for 10 days, with the exception of specified countries in Europe with sufficiently low transmission. Norway is not open for travellers from countries outside of the EU/EEA/Schengen area. "
+Poland,Yes,0,"Poland has restored full border traffic within the internal borders of the European Union. No need to undergo quarantine. Polish citizes, foreigners who are spouses or children of Polish citizens, holders of a Pole's Card, head of diplomatic missions are allowed to travel to Poland. "
+South Africa,No,10/14 days,"South Africa is set to open its borders for tourists on the 1st of October 2020. All new arrivals in South Africa will be required to providee a negative COVID-19 test result taken within 72 hours of departure. Either this, or they face a quarantine on arrival. "
+Spain,Yes,0,Spain re-opened its borden to a list of low-risk EU nations. Only residents of these approved nations are allowed entry into Spain. 
+United Arab Emirates,Yes,14 days,All travellers to the UAE must have carried out a COVID-19 PCR test within 96 hours and must have tested negative in order to travel to the UAE. 

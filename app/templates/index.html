@@ -1,0 +1,113 @@
+<!-- Aleksandra Kulbaka, GoSafe, 2020-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--
+  <meta name="description" content="Keep up to date with changing travel regulations and restrictions.Safe travel with Trvl Safe.">
+  <meta name="keywords" content="Travel, Legal Travel, Travel Restriction, COVID19">
+  -->
+
+    <meta name="author" content="Aleksandra Kulbaka">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="../static/images/logo3.png">
+    <title>Maths, am I pregnant?</title>
+</head>
+
+<body>
+    <main>
+    
+	<div id="description">
+		<div> <img  id="picture" src="../static/images/logo3.png" alt="Picture of waves"> </div>
+		<div id="text">
+                <h1> MATHS, AM I PREGNANT? </h1>
+                <p>
+                    Website to calm you down.
+                </p>
+                <p>
+                    It shows an approximate probability of you getting pregnant.
+                </p>
+                <p> Fill in the form below. </p>
+        
+        </div>
+	</div>
+    <div style="clear:both"><br></div>
+    <div id="form">
+        <form method="post" action="/submit">
+        <div class="question">
+            <p>Did you have vaginal intercourse after your last period?</p>
+                <input type="radio" id="yes" name="if-had-sex" value="yes" checked>
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="if-had-sex" value="no">
+                <label for="no">No</label>
+        </div>
+
+        <div class="question">
+            <p>How old are you?</p>
+                <input type="radio" id="younger" name="age" value="younger" checked>
+                <label for="younger">less than 35 years </label>
+                <input type="radio" id="older" name="age" value="older">
+                <label for="older"> more or equal than 35 years </label>
+        </div>
+
+        <div class="question">
+            <p>When did you have sex?</p>
+                <input type="date" id="when-had-sex" name="when-had-sex" required>
+        </div>
+
+        <div class="question">
+            <p>When did you start your last period?</p>
+                <input type="date" id="last-period" name="last-period" required>
+        </div>
+
+        <div class="question">
+            <p>How long is your menstrual cycle?</p>
+                <input type="number" id="menstrual-cycle" name="menstrual-cycle" required>
+        </div>
+
+        <div class="question">
+            <p>If you know it, please put the day of your ovulation the closest to the date of the intercourse</p>
+            <p> If you don't know it, leave it empty. </p>
+                <input type="date" id="ovulation-day" name="ovulation-day" >
+        </div>
+
+        <div class="question">
+        <p>What contraception method did/do you use?</p>
+        {% for contraception in contraceptions %}
+        <div>
+        <input type="checkbox" name={{ contraception.id }} value={{ contraception.id }}>
+        <label for={{ contraception.id }}> {{ contraception.name }} </label>
+        </div>
+        {% endfor %}
+        </div>
+        <br><br>
+
+            <input type= "submit" name= "submit"/>
+        </form>
+    </div>
+    <div> 
+    {{response}}
+
+    </div>
+      <br><br>
+      <footer>
+        <br> <div id='image_licence'>
+        Image by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1299514">OpenClipart-Vectors</a> 
+        from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1299514">Pixabay</a></div>
+      <div id='image_licence'>
+      Image by <a href="https://pixabay.com/users/pexels-2286921/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1867285">Pexels</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1867285">Pixabay</a>
+      </div>
+      </footer>
+      <!--
+          https://www.vhv.rs/viewpic/hbbwhoi_banned-png-stamp-transparent-banned-sign-transparent-background/
+      -->
+
+      
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!-- Aleksandra Kulbaka, GoSafe, 2020-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--
+  <meta name="description" content="Keep up to date with changing travel regulations and restrictions.Safe travel with Trvl Safe.">
+  <meta name="keywords" content="Travel, Legal Travel, Travel Restriction, COVID19">
+  -->
+
+    <meta name="author" content="Aleksandra Kulbaka">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="../static/images/logo3.png">
+    <title>Maths, am I pregnant?</title>
+</head>
+
+<body>
+    <main>
+    
+	<div id="description">
+		<div> <img  id="picture" src="../static/images/logo3.png" alt="Picture of waves"> </div>
+		<div id="text">
+                <h1> MATHS, AM I PREGNANT? </h1>
+                <p>
+                    The probability of you getting pregnant is around:
+                </p>
+                <h2>
+                    {{response.probability}} %*
+                </h2>        
+        </div>
+	</div>
+    <div style="clear:both"><br></div>
+    <div id="form">
+        <div class="question">
+            <p> You ovulated on: {{response.ovulation}} </p>
+            <p> According to <a href="https://academic.oup.com/aje/article/165/9/1088/90537"> 
+                "Effects of Sexual Intercourse Patterns in Time to Pregnancy Studies" (2007) </a>
+                the probability of getting pregnant for women in age range {{response.age}} {{response.date}} **
+            </p>
+        </div>
+
+        <div class="question">
+        <p> You can find the effectiveness of different forms of contraception on <a href="https://www.cdc.gov/reproductivehealth/unintendedpregnancy/pdf/contraceptive_methods_508.pdf"> 
+                U.S. Department of Health and Human Services  </a>
+        and <a href="https://www.nhs.uk/conditions/contraception/how-effective-contraception/"> 
+                U.K. National Health Service. </a>
+        </p>
+        <p> {{response.contraception}} </p>
+        </div>
+        <br><br><br>
+
+    <div> 
+        <p>* Probability was computed based on official, scientific studies. However, it is still a probability hence 
+        I cannot guarantee whether you are or aren't pregnant. </p>
+        <p>** Since the research was conducted only on 2 groups of women: in range (19-26) and (35-39),
+               I classified women in age range (27-34) to the group 1 and women above 39 to the group 2. 
+               In reality, the probability for these groups may be lower.
+        </p>
+    </div>
+    </div>
+      <br>
+      <footer>
+        <br> <div id='image_licence'>
+        Image by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1299514">OpenClipart-Vectors</a> 
+        from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1299514">Pixabay</a></div>
+      <div id='image_licence'>
+      Image by <a href="https://pixabay.com/users/pexels-2286921/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1867285">Pexels</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1867285">Pixabay</a>
+      </div>
+      </footer>
+      <!--
+          https://www.vhv.rs/viewpic/hbbwhoi_banned-png-stamp-transparent-banned-sign-transparent-background/
+      -->
+
+      
+
+    </main>
+
+</body>
+</html>

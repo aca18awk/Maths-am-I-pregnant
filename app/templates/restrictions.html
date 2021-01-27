@@ -1,0 +1,56 @@
+<!-- Aleksandra Kulbaka, GoSafe, 2020-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Keep up to date with changing travel regulations and restrictions.Safe travel with Trvl Safe.">
+  <meta name="keywords" content="Travel, Legal Travel, Travel Restriction, COVID19">
+  <meta name="author" content="Aleksandra Kulbaka">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" href="../static/images/logo.png">
+  <title>trvlSafe</title>
+</head>
+
+<body>
+    <header>
+      <a href="{{ url_for('index') }}"><img id="logo" src="../static/images/logo.png" alt="Logo of GoSafe"></a>
+    </header>
+    
+    <main>
+           <h2>
+           UK - {{ response.country }} 
+           </h2>
+      <p>
+      {{ response.flight }}
+      </p>
+      <p>
+      {{ response.description }}
+      </p>
+      <p>
+      {{ response.quarantine }}
+      </p>
+      <br><br>
+      <div id="feedback"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdf3QTZqW4b8hQ7JjX-jaHE6RQSrdvifpeu4keXLnngot8zgA/viewform?usp=sf_link" target="_blank" style="color:#e08e00;">
+        Please, let us know what you think about the website.
+        </a>
+      </div>
+
+      <footer>
+        <br><br><br>
+        Nationals or residents can always return to their home countries. <br>
+        This website is only for quick and easy to read answers. For more details visit <a href="https://www.gov.uk/foreign-travel-advice">UK Government website </a> <br>
+        The information here is for BRITISH NATIONALS departing from the UK. It may or may not apply to nationals of other countries. <br>
+        It is possible to travel to even completely closed countries by using unconventional ways like special permissions, charter or private flights, etc. <br>
+        <br> <div id='image_licence'>
+          Image by <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=841441" target="_blank">Free-Photos</a>
+          from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=841441" target="_blank">Pixabay</a>
+        </div>
+      </footer>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+﻿contraception,likelihood
+Implant, 0.0005 
+IUD LNG, 0.0020 
+IUD Copper T, 0.0080 
+Injection, 0.0600 
+Pill, 0.0900 
+Patch, 0.0900 
+Ring, 0.0900 
+Diaphram, 0.1200 
+Male Condom, 0.1800 
+Female Condom, 0.2100 
+Withdrawal, 0.2200 
+None, 1.0000 
