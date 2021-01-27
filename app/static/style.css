@@ -22,10 +22,6 @@ body {
     float: left;
 }
 
-#picture-mobile {
-    display: none;
-}
-
 #text {
     width: 50%;
     float: left;
@@ -52,7 +48,7 @@ h2 {
 #form {
     width: 80%;
     text-align: center;
-    margin-left: 10%;
+    margin: auto;
 }
 
 .question {
@@ -133,14 +129,10 @@ footer {
 }
 
 @media only screen and (max-width: 800px) {
-    #picture-mobile {
-        display: block;
+    #picture {
         width: 80%;
         float: center;
         margin-left: 10%;
-    }
-    #picture {
-        display: none;
     }
     #text {
         width: 80%;
