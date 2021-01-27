@@ -1,1 +1,3 @@
-# Maths-am-I-pregnant
+# Go-Safe
+
+This is initial, responsive version of the MVP.
