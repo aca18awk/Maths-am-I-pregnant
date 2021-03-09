@@ -2,7 +2,7 @@
 
 This is a website that calculates the approximate probability of getting pregnant based on various  factors. The probability is calculated using methods I have derived from quality research (links can be found on the site)
 
-I made this on a whim, however on further reflection I've realised it may actually be useful so someone.
+I made this on a whim, however on further reflection I've realised it may actually be useful for someone.
 
 All of the code is here, nothing at all is stored anywhere.  
 
